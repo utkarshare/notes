@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="144.50905mm"
+   height="114.00048mm"
+   viewBox="0 0 144.50905 114.00048"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="queuingdelay.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect853"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="51.221606"
+     inkscape:cy="180"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       originx="-40.831568"
+       originy="-47.625" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.831566,-47.624999)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 47.624999,47.624999 V 150.8125 H 185.20833 V 47.624999"
+       id="path12" />
+    <path
+       style="opacity:0.77;fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.265, 0.265;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 166.6875,150.8125 V 47.624999"
+       id="path14" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 47.624999,150.8125 Z"
+       id="path845" />
+    <circle
+       id="path849"
+       style="fill:#000000;stroke:none;stroke-width:0.264583"
+       cx="47.625"
+       cy="150.8125"
+       r="0.39687499" />
+    <path
+       style="fill:none;stroke:#008033;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 47.624999,150.8125 c 4.225976,-0.0241 8.450468,-0.30562 12.642281,-0.84243 15.20515,-1.94719 29.996008,-7.31848 42.74051,-15.83704 16.40951,-10.96828 29.10405,-26.88265 38.35556,-44.3178 6.89748,-12.998801 12.00796,-26.944285 15.14288,-41.321916"
+       id="path851"
+       inkscape:path-effect="#path-effect853"
+       inkscape:original-d="m 47.624999,150.8125 c 4.214358,-0.28055 8.428453,-0.56136 12.642281,-0.84243 4.213831,-0.28107 28.493934,-10.55776 42.74051,-15.83704 14.24656,-5.27928 25.57063,-29.54494 38.35556,-44.3178 12.78492,-14.772865 10.09551,-27.547678 15.14288,-41.321916" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="97.674866"
+       y="160.64363"
+       id="text857"><tspan
+         sodipodi:role="line"
+         id="tspan855"
+         x="97.674866"
+         y="160.64363"
+         style="stroke-width:0.264583">L/R </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.42914px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.110729"
+       x="-134.1662"
+       y="44.196674"
+       id="text861"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan859"
+         x="-134.1662"
+         y="44.196674"
+         style="stroke-width:0.110729">Average Queueing Delay</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.13556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.153389"
+       x="164.68633"
+       y="156.77579"
+       id="text1044"><tspan
+         sodipodi:role="line"
+         id="tspan1042"
+         x="164.68633"
+         y="156.77579"
+         style="stroke-width:0.153389">1</tspan></text>
+  </g>
+</svg>

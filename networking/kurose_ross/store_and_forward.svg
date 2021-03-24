@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#e9c6af;fill-rule:evenodd;stroke:#e9c6af;stroke-width:0.190594"
+       id="rect14"
+       width="35.09124"
+       height="29.016113"
+       x="6.6041989"
+       y="28.3536"
+       transform="matrix(0.99999722,0.00235748,-0.00209606,0.9999978,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.73668px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0934171"
+       x="13.837393"
+       y="34.523254"
+       id="text18"
+       transform="scale(0.77952978,1.2828246)"><tspan
+         id="tspan16"
+         x="13.837393"
+         y="34.523254"
+         style="stroke-width:0.0934171">Transmitting Host</tspan><tspan
+         x="13.837393"
+         y="39.194107"
+         style="stroke-width:0.0934171"
+         id="tspan82" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 42.785965,43.595898 37.568481,0.120751"
+       id="path20" />
+    <rect
+       style="fill:#80b3ff;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect22"
+       width="59.103649"
+       height="11.314605"
+       x="80.354446"
+       y="43.716652" />
+    <rect
+       style="fill:#2a7fff;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect30"
+       width="59.027088"
+       height="32.657852"
+       x="80.354446"
+       y="11.058798" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.45809,43.716651 28.01388,-0.334266"
+       id="path32" />
+    <rect
+       style="fill:#e9c6af;fill-rule:evenodd;stroke:#e9c6af;stroke-width:0.190594"
+       id="rect14-7"
+       width="35.09124"
+       height="29.016113"
+       x="166.99034"
+       y="27.609495"
+       transform="matrix(0.99999722,0.00235748,-0.00209606,0.9999978,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.0148px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10037"
+       x="218.25189"
+       y="35.156311"
+       id="text18-4"
+       transform="scale(0.78921809,1.2670769)"><tspan
+         id="tspan16-7"
+         x="218.25189"
+         y="35.156311"
+         style="stroke-width:0.10037">Recieving host</tspan><tspan
+         x="218.25189"
+         y="40.174812"
+         style="stroke-width:0.10037"
+         id="tspan80" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.04644px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.201161"
+       x="98.079117"
+       y="27.573124"
+       id="text86"
+       transform="scale(0.87729172,1.1398717)"><tspan
+         id="tspan84"
+         x="98.079117"
+         y="27.573124"
+         style="stroke-width:0.201161">Packet Switch</tspan><tspan
+         x="98.079117"
+         y="37.631172"
+         style="stroke-width:0.201161"
+         id="tspan88" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.66245px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.141561"
+       x="103.80228"
+       y="48.419785"
+       id="text92"
+       transform="scale(0.98284929,1.01745)"><tspan
+         id="tspan90"
+         x="103.80228"
+         y="48.419785"
+         style="stroke-width:0.141561">Buffer</tspan></text>
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94"
+       width="2.9991107"
+       height="2.9335105"
+       x="134.58421"
+       y="50.270832" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-2"
+       width="2.9991107"
+       height="2.9335105"
+       x="129.29256"
+       y="50.270832" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-0"
+       width="2.9991107"
+       height="2.9335105"
+       x="124.00089"
+       y="49.983158" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-9"
+       width="2.9991107"
+       height="2.9335105"
+       x="118.70923"
+       y="49.983158" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-5"
+       width="2.9991107"
+       height="2.9335105"
+       x="34.395832"
+       y="47.625" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-4"
+       width="2.9991107"
+       height="2.9335105"
+       x="28.750889"
+       y="47.337322" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-1"
+       width="2.9991107"
+       height="2.9335105"
+       x="23.459223"
+       y="47.625" />
+    <rect
+       style="fill:#d7f4e3;stroke:#e9c6af;stroke-width:0.264583"
+       id="rect94-3"
+       width="2.9991107"
+       height="2.9335105"
+       x="18.167555"
+       y="47.337322" />
+  </g>
+</svg>

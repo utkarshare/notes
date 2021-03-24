@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="style.css">
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+	<div id="container">
+		<div id="chapter">
+			<h1>Computer Networks and the Internet</h1>
+				<ul>
+						<li>Any device hooked up to the Internet is called a <b>host</b> or an <b>end system</b></li>
+						<li>End systems are connected together by a network of <b>communication links</b> and <b>packet switches</b></li>
+						<li>Different links transmit data at different rates. The <b>transmission rate</b> of a link is measured in bits/second</li>
+						<li>When one end system wants to send data to another end system, it breaks the data into chunks or segments. Each segment is given a <b>header</b>. These segments are called <b>packets</b></li>
+						<li><b>Packet switches</b> are responsible for guiding packets to their correct destination. There are various types of packet switches, but the most common ones are <b>routers</b> and <b>link layer switches</b>.</li>
+						<li>End systems connected to the Internet provide a <b>socket interface</b> that dictate how the end system will request delivery of packets via the Internet infrastructure</li>
+						<li>A <b>protocol</b> is a simple set of rules that governs how messages and data is routed and exchanged over the network as well as actions to be taken upon transmission and/or reciept of messages</li>
+						<li>A <b>digital subscriber line</b> uses a twisted pair copper wire over which data can be transmitted at various frequencies. A DSL modem transmits data to the ISP's local <b>Central Office</b> where it goes through a <b>Digital Subscriber Line Access Multiplexer</b> or <b>DSLAM</b></li>
+						<li>A modem turns digital signals by the residential end system, into analog signals which can be transmit over the twisted pair copper wire</li>
+						<li>A twister pair wire can transmit data in three frequency bands
+								<ol>
+										<li>A high-speed downstream channel at 50khZ to 1MHz band</li>
+										<li>A medium-speed upstream channel at 4kHz to 50kHz band</li>
+										<li>A low-speed telephone channel at 0kHz to 4kHz band</li>
+								</ol>
+						</li>
+						<li>A <b>splitter</b> splits the recieved analogue data signal and forwards the high-band signals to the modem for demodulation</li>
+						<li>The DSL upload and download speed are different and thus <b>asymmetric</b></li>
+						<li>DSL has been designed for short distance usage. Generally its range does not exceed 10 miles. And the bandwidth of a DSL connection is subject to  distance from the Central Office, the guage of the twister pair and electrical interference</li>
+						<li>Another method of Internet access is via <b>coaxial cable</b>.</li>
+						<li>A coaxial cable is run from a <b>neighborhood junction</b> to a residence</li>
+						<li>The neighborhood junction is connected to the ISP's <b>Cable Modem Termination System</b> or <b>CMTS</b>. This is called the <b>head end</b> of the cable</b>. The head end is connected to the Internet via an <b>optical fibre</b></li>
+						<li>Since this method involves both Fiber and Coaxial cable, the technique of connection is called <b>Hybrid Fiber Coaxial</b> or <b>HFC</b></li>
+						<li>The HFC is a <b>shared broadcast medium</b>. What this means is that packets transmitted by the cable head-end travels downstream to every home connected to that head end</li>
+						<li>Another technology for Internet access is <b>Fiber to the Home</b> or <b>FTTH</b>.</li>
+						<li>The simplest of fiber distribution techniques is giving one optical fibre line to every house</li>
+						<li>But what is done more often is that a single fiber line is run for multiple houses, splitting into individual fibres only when it gets close to a customer's home</li>
+						<li>This kind of network splitting of fiber is done via two <b>optical distribution network architechtures</b>: namely <b>Active Optical Network</b> and <b>Passive Optical Network</b></li>
+						<li>In <b>PON</b> there are <b>Optical Network Terminators</b>at every house. These are connected via a dedicated fiber to a <b>neighborhood splitter</b></li>
+						<li>The neighborhood splitter multiplexes the signals from these various ONTs onto a single optical fiber</li>
+						<li>This shared optical fiber is connected to an <b>Optical Line Terminator</b> at the Central Office </li>
+						<li>The physical media over which data travels, can be <b>guided</b> or <b>unguided</b></li>
+						<li>Guided physical media is Twister Pair cables, Coaxial cables, Fiber etc</li>
+						<li>Unguided media is the radio spectrum</li>
+						<li><b>Twisted Pair</b> consists of two insulated copper wires of 1mm thickness, which are twisted around each other in a spiral, so as to reduce electrical interference. There are two types of twisted pair wires - <b>Unshielded Twister Pair(UTP</b> and <b>Shielded Twisted Pair</b>. It can achieve data rates from as low as 10Mbps to as high as 10Gbps for the 6a cables, within a hundred metre range</li>
+						<li><b>Coaxial cable</b> consists of two copper conductors that are <b>concentric</b> and not parallel.</li>
+						<li><b>Fiber optic</b> is a thin optical fibre that conducts pulses of light. It can achieve speeds from 51.8Mbps to 39.8Gbps. The <b>Optical Carrier</b> standard has some speficfications for the speed of an optical fibre. These specifications are labelled OC-1,OC-3, OC-12, OC-768 etc.</li>
+						<li><b>Radio channels</b> transmission is determined by <b>shadow fading</b>(signal reduces over distance and as it passes through objects), <b>multipath fading</b>(due to signal reflection off of interfering objects), and <b>interference</b>(due to other transmission signals)</li>
+						<li>Packet switches generally utilize <b>Store and Forward</b> packet switching. Store and forward means that the switch will first <b>recieved the entire packet</b> before it can begin to transmit the first of the packet onto the outbound link</li>
+						<li>In the figure, the <b>Transmitting Host</b> is sending the packets to the <b>Recieving Host</b> via the Packet Switch. The packet switch has a <b>buffer</b> memory in which it stores the packets. The packet is not forwarded until the entire packet is in the buffer<img src="store_and_forward_2.svg" ></li>
+						<li>Suppose that there are \(L\) total bits in a single packet, and the transmission rate is \(R \frac{bits}{second}\), then the total time taken to transmit one packet from the <b>Transmiting Host</b> to the <b>Packet Switch</b> is \(\frac{L}{R} seconds\)</li>
+						<li>After \(\frac{L}{R} seconds\) have elapsed, the entire packet is in the buffer of the Packet Switch. At that instant, the Packet Switch will start forwarding the packet to the Reciving Host. This transmission will take another \(\frac{L}{R} seconds\) (assuming that the transmission rate from packet switch to transmission host is also \(R \frac{bits}{seconds}\). Thus a total of \(2\frac{L}{R} seconds\) have elapsed for a single packet to transfer from source to destination</li>
+						<li>Assuming that there were \(N\) links and thus \(N-1\) packet switches, then the time taken for the entire packet to be transmitted <b>from transmitting host to recieving host</b> is \(N\frac{L}{R}seconds\). This is known as the <b>Store and forward delay</b></li>
+						<li>Every packet switch is connected to <b>multiple hosts</b>. And for <b>every host</b> there is an <b>output buffer</b> in which the packets meant for that host are stored. It may happen that the entire packet is in buffer, but CANNOT be transmitted yet because a <b>prior packet is still transmitting</b>. Thus the packet under consideration, will have to WAIT. This is called <b>queuing delay</b>.</li>
+						<li>Since buffer space is finite, if a buffer is full, some packets will be <b>dropped</b>. Either the newly arriving packets, or some of the packets in the buffer may be dropped. This is labelled <b>packet loss</b></li>
+						<li>Packet Forwarding on the internet is done on the router with the help of <b>routing tables</b>. Basically the router reads part of the destination address within the packet, and depending on what that part of the address says, forwards it to one of it's outbound links</li>
+						<li>These tables are set automatically using <b>routing protocols</b></li>
+						<li>Apart from the above described <b>Packet Switching</b> there is another method of routing data across networks, called <b>Circuit Switching</b></li>
+						<li>In <b>Circuit Switching</b> before transmission of data, a <b>circuit</b> is created. This is a <b>dedicated path or connection</b> between the source and destination hosts. Since every router has multiple outbound links, every circuit reserves a fraction of the total transmission rate of the router. Once the connection is established, the data is transferred across at that constant transmission rate<p class="centeralign"><img class="image" src="circuit_switching.svg" /></p></li>
+						<li>Multiple circuits can be created across a single link using either <b>Frequency Division Multiplexing(FDM)</b> or <b>Time Division Multiplexing(TDM)</b></li>
+						<li>In <b>Frequency Division Multiplexing</b>, the entire frequency range is split into various bands, and each band is alloted to a circuit. The data for that circuit is then transmitted at that allotted frequency</li>
+						<li>In <b>Time Division Multiplexing</b>, time slots are created, and one slot is dedicated to that circuit. All the time slots together make up a <strong>frame</strong>. Once all the time slots of a frame have elapsed, the frame repeats itself. Thus, the time slots repeat in a <em>round-robin fashion</em>. At a given moment, the data being transmitted corresponds to the particular time slot and circuit that have been alloted. In TDM, the <b>transmission rate of a circuit</b> can be calculated as \(\frac{frames}{second}\times\frac{bits}{slot}\). This is because in every frame, data for a circuit is only transmit in it's own timeslot.<p class="centeralign"><img class="image" src="tdm.svg" /></p></li>
+						<li>In <strong>Circuit Switching</strong>, it can be that even though the link is reserved, there is <strong>no data transmission due to user delay</strong>. For example, suppose a radiologist uses a circuit switched network to fetch an image, contemplates an image, and then requests the image. There is no transmission for the duration of the contemplation. This idle time is called <b>silent period</b></li>
+						<li>Here is a <strong>comparison of Circuit Switching and Packet Switching</strong>. Imagine that you have a bandwidth of \(1Mbps\), and users generally transmit at the rate of \(100kbps\). Then you can have at max \(\frac{1Mpbs}{100kbps} = 10\) users with <strong>Circuit Switching</strong>. And suppose that the probability of any given user transmitting data at a given time is \(0.1\). Then the probability that all users are transmitting at the same time is miniscule. This means that the bandwidth will not be utilized to it's full extent.  For the same bandwidth, suppose you have <strong>Packet Switching</strong>. Now you take on 35 users. If the probability thata given user is transmitting at a given time stays the same at \(0.1\), then the probability that 11 or more users are transmitting at a given time is \(0.0004\) (How we came to this is given in a problem at the end of this chapter). Thus the probability of 10 or less users is \(0.996\). So we <strong>get a performance rate similar to Circuit Switching, but with MORE users</strong>. <p>Again consider a TDM Circuit Switching network. If only one person is transmitting, he gets one slot per frame. Which means his transmission rate will be a fraction of the total bandwidth, despite the rest of the bandwidth not being utilized.</p>
+							<p>What we can understand from this is that <strong>Packet Switching allocates resources ON DEMAND and promotes more effecient usage of bandwidth</strong>. However, the arrival order could be wrong in Packet Switching and the delays can be non-uniform. Some argue that this makes Packet Switching inferior for real time applications like video calling.</p></li>
+						<li>We can now describe an evolution of the heirarchy of the internet.
+							<ul>
+								<li><strong>Network Structure 1(NS-1):</strong> In this structure you have <b>Access ISPs</b> and a single <b>Global ISP</b></li>
+								<li><strong>Network Structure 2(NS-2):</strong> In this structure you have <b>Access ISPs</b> and multiple <b>Globals ISPs</b>. These global ISPs are also called <b>Tier 1 ISPs</b>. However, there is no official body that decides which is a Tier-1 ISP, instead that is more a function of the <strong>scale of an ISP</strong></li>
+								<li><strong>Network Structure 3(NS-3):</strong> In this structure you add a layer between the access ISP and the Tier-1 ISP. Thus you have multiple <b>regional ISPs</b>. The access ISPs connect to a regional ISP. THe regional ISP in turn connects to a tier-1 ISP. However, an access ISP can choose to bypass the regional ISP and connect directly to a large tier-1 ISP</li>
+								<li><strong>Network Structure 4(NS-4):</strong> We now have some more concepts added on.
+									<ul>
+										<li><strong>Multi Homing:</strong> An access ISP may have contracts with and connect to multiple regional ISPs simultaneously. This is known as Multi-Homing.</li>
+										<li><strong>Point of Presence:</strong> A point of presence is simply a group of routers in a provider ISP to which a customer ISP can connect</li>
+										<li><strong>Peering:</strong> Since customer ISPs pay provider ISPs based on traffic, they can try and reduce their costs by peering with other ISPs and exchanging directly (usually at no cost to either ISP)</li>
+										<li><strong>Internet eXchange Point:</strong>An IXP is a place where multiple ISPs can peer together, and thus reduce costs.</li>
+									</ul>
+									All of these together form an ecosystem, which is the NS-4 system.</li>
+								<li><strong>Network Structure 5(NS-5):</strong> This is built on top of NS-4. In this, large content providers try to bypass tier-1 ISPs by creating their own private network. A content provider will peer with lower tier access ISPs directly or at IXPs. This allows it to bypass Tier-1 ISPs largely. However some access ISPs can only be reached via a local or a regional ISP, thus the content provider will also connect with those ISPs. However it will have a reduced bill due to lower amounts of traffic<p class="centeralign"><img class="image" src="ns5.svg" /></p></li>
+							</ul>
+						</li>
+					</li>
+
+					<li>There are various delays that occur in sending a packet from source to destination. At every node in the link there are delays. The delay in sending a packet from Node A to Node B is called <strong>Nodal Delay at Node A</strong></li>
+					<li>The basic delays that occur at a Node are:
+						<ul>
+							<li><strong>Processing Delay:</strong> The time that a node (a router) takes to examine the header of a packet, consult it's routing table and assign the packet to a queue that corresponds to the correct outbound link</li>
+							<li><strong>Queueing Delay:</strong> The time that a packet waits in the queue (or buffer) while prior data transmits.</li>
+							<li><strong>Transmission Delay:</strong> Since a packet is a group of bits, and since a node transmits data at the rate of certain bits per second, it will <strong>take some time</strong> for the entire packet to be put on the outbound link. This is the transmission delay - the time taken to push the entire packet out the node. <strong>This delay does not encompass the time that the packet takes to traverse the distance to Node B</strong> - it is only concerned with the time taken to push a packet out of it's buffer and onto the physical link.. If the length of a packet is \(L\) bits and the rate of transmission at a node is \(R\frac{bits}{second}\), then the Transmission Delay \(T_{td} = \frac{L}{R} \) seconds.</li>
+							<li><strong>Propagation Delay</strong> Once a packet has been pushed out of the router, it must still travel a certain distance, which will take some time. This time taken is the propagation delay. The propagation delay depends upon the speed of the physical medium of transmission, as well as the distance. In fact if speed of medium is \(S\frac{mts}{second}\) and distance is \(D\), then propagation delay can be calculated as \(T_{pd} = \frac{D}{S}seconds\)</li>
+						</ul>
+					</li>
+					<li>Total delay is a sum of <strong>Processing Delay</strong>, <strong>Queueing Delay</strong>, <strong>Transmission Delay</strong> and <strong>Propagation Delay</strong>. In fact, \[T_{delay} = T_{processing}+T_{qdelay}+T_{td}+T_{</li>
+					<li>Of all the delays, the most interesting is <strong>Queueing Delay</strong>, because unlike other delays, this delay is not uniform and depends far more upon randomness. If there is more traffic in the system, the queues at nodes will generally be full, and thus queuing delay will be larger. If traffic isn't very high, queueing delay can even be nonexistent.<p>Suppose \(a\) packets arrive at a node every second. Also for the sake of discussion, assume that the size of all packets is uniform at \(L \frac{bits}{packet}\). Then the number of bits arriving at that node every second, is \(La\) - this is the <strong>number of bits that enter the node every second</strong>. Now suppose the transmission rate of the node is \(R{bits}{second}\) - this is <strong>the number of bits that exit a node every second</strong>. The ratio of these two quantities - \(\frac{LA}{R}\) is called the <b>traffic intensity</b>. This ratio determines queuing delays. If \(\frac{La}{R} \le 1\) then there are no to minimal queuing delays. On the other hand if \(\frac{La}{R} \gt 1\) then queues build up and there are high queuing delays</p><p>In practice however, <strong>packet arrival rate is not fixed</strong>. Packets arrive at random times. So calculating queueing delay is a bit more complex in practice. One thing you do see however is that as <strong>traffic intensity</strong> gets closer and closer to 1, the average queueing delay in the network increases rapidly as long queues start building up.</p><p class="centeralign"><img class="image" src="queuingdelay.svg" /></p></li>
+					<li>Once a queue is build up and the node buffer is filled, it <strong>cannot store any more concepts</strong>. At this point it will have to <strong>drop packets</strong>. This is known as <strong>packet loss</strong></li>
+					<li>The <strong>performance of a node</strong> is measured in terms of <strong>delay</strong> and <strong>packet loss</strong></li>
+					<li>The <strong>throughput</strong> of a link is the actual rate at which a host can recieve the data. It is measured in \(\frac{bits}{second}\). If a host recieves a file of size \(F\) bit in \(R\) minutes, then the throughtput \(T_{put} = \frac{F}{R}\).</li>
+					<li>As given in the figure, if the transmission rate of the server is \(R_{s}\) and the transmission rate of the intermediate router is \(R_{c}\), then if \(R_{s}\le R_{c}\), then \(T_{put} = R_{s}\). In this case, whatever packets come to the router are forwarded immediately with <b>no queuing delay</b>. If on the other hand \(R_{s}\gt R_{c}\), then \(T_{put} = R_{c}\). In this case, the packets arrive at the router at a very fast rate, and it can only forward them slowly. Thus, <b>there is queueing delay</b>. So our throughput is given by \(T_{put} = min(R_{s}, R_{c})\)<p class="centeralign"><img class="image" src="tput1.svg" /></p></li>
+					<li>If there are \(n\) nodes in the link, each with it's own transmission rate, then the throughput is \(T_{put} = min(R_{1}, R_{2}, ..., R_{n})\)<p class="centeralign"><image class="image" src="tput2.svg" /></p></li>
+					<li>Suppose that 10 servers and 10 clients are all connected to each other. All of these connections <b>share one link in common</b>. Now if the transmission rate of this link is very high, then the throughput for every link will be the minimum transmission speed of it's nodes. But if the common link has transmission rate \(R\), that's not very high, then the throughput will become \(T_{put} = \frac{R}{10}\)<p class="centeralign"><img class="image" src="tput3.svg" /></p>.</li>
+					<li>Thus is it evident that <strong>throughput depends upon the intermediate links</strong>.</li>
+					<li>Though some engineers are opposed to it, network protocols are largely arranged in layers now</li>
+					<li>Since these layers all have protocols, and the layers are conceptually built atop one another, this structure is called the <b>protocol stack</b></li>
+					<li>Every layer <strong>provides service to the layer above it</strong> by using the layers below it, and adding some functionality on top. This is called the <b>service model of layers</b></li>
+					<li>The Internet protocol stack has 5 layers from "top" to "bottom". They are:
+						<ol>
+							<li><strong>Application Layer:</strong> This is the layer where the protocols for various network applications reside. HTTP, HTTPS, FTP, SMTP etc are all examples of Application Protocols. Protocols of this layer are <strong>implemented completely on software</strong>, and the <strong>unit of information is called message</strong>, for this layer.</li>
+							<li><strong>Transport Layer:</strong> The protocols of this layer(<strong>TCP</strong> and <strong>UDP</strong>) are responsible for <b>transporting application layer messages between application end-points</b>. <b>TCP</b> is <b>connection-oriented</b> (ie circuit switched) and provides for reliable delivery and <strong>flow control</strong>. <b>UDP</b> is a connectionless protocol that does not provide guaranteed delivery, nor does it provide for flow control or congestion control. The <b>unit of information is segment</b> for this layer. The protocols of this layer are also completely implemented in software</li>
+							<li><strong>Network Layer:</strong> The network layer takes a segment from the transport layer, and is responsible for transporting it to the transport layer of the destination. The <b>unit of information for this layer is the datagram</b>. The network layer consists of the <b>Internet Protocol</b> which defines the format of a datagram, as well as processes associated with the datagram - but <b>it also consists of various routing protocols</b>. The Network Layer is <b>implemented on both hardware and software</b></li>
+							<li><strong>Link Layer:</strong> The <b>unit of information for the link layer is a frame</b>. The layer is responsible for getting a frame from one node to next node. There are various protocols - some provide for guaranteed delivery (distinct from TCP, these protocols guarantee delivery to the next hop, TCP guarantees delivery to the transport layer of the destination), others provide for wireless delivery. Ethernet, WiFi etc are all examples of Link Layer protocols. This layer is also called <b>Data Link Layer</b>. The Link Layer is <b>implemented on the physical hardware</b></li>
+							<li><strong>Physical Layer:</strong> This layer is concerned with the actual physical transmission of the message</li>
+						</ol>
+					</li>
+					<li>There is another model, called the <b>ISO-OSI model</b>, that was proposed in the 1970s. It was a 7-layer model. 5 of the 7 layers are the same as the Internet Protocol stack. <strong>Two additional layers were sandwiched between the Application and Transport layer</strong>.  These layers were:
+						<ol>
+							<li><strong>Presentation Layer:</strong> This layer dealt with the interpretation of information, and provided services such as data compression</li>
+							<li><strong>Session Layer:</strong> This layer provided for <b>delimiting</b> and <b>synchronization</b>. It even had a <b>checkpointing</b> mechanism and a <b>recovery scheme</b> built into it </li>
+						</ol>
+					</li>
+					<li> The Internet protocol did not include these layers because the provisioning (or not) of these services was left up to the choice of the application designer</li>
+					<li>The following figure shows the process of encapsulation. <p class="centeralign"><img class="image" src="encapsulation.svg" /></p>
+						<ul>
+							<li><p>The <b>message</b> from the <strong>Application Layer</strong> is given to the <strong>Transport Layer</strong>, which <b> encapsulates it</b> by adding a <b>header</b> to it. Thus <b>the message becomes a segment</b>.Similary, the <strong>Transport Layer</strong> gives its <b>segment</b> to the <strong>Network Layer</strong>, which <b>further encapsulates the segment, turning it into a datagram</b>. Finally the <strong>Network Layer</strong> passes on its <b>datagram</b> to the <strong>Link Layer</strong>. The <strong>Link Layer</strong> in turn <b>encapsulates the datagram, by adding its header and thus turning it into a frame</b>. Finally the frame is sent over the physical layer to the destination.</li>
+							<li>At the destination, the <b>encapsulation is reversed</b>. Every layer removes it's header until only the message is left</li>
+							<li>At the intermediate <strong>Link Layer Switch</strong>, only the encapsulation of the Link Layer is removed and new encapsulation done, and then the frame is forwarded on it's way. Thus, <b>the network switch is a Link Layer device. It cannot recognize IP addresses</b>.</li>
+							<li>At the intermediate <strong>Router</strong> the encapsulation of both the Link Layer and the Network Layer is removed, and then fresh encapsulation is added. Thus <strong>the router is a network layer device</strong></li>
+							<li>Thus at each layer, the packet of information has <strong>a header field</strong> and a <strong>payload field</strong>. The payload field for each layer is the packet recived from the layer above it. Thus, the payload for the Transport layer is the message, and the payload for the Network layer is the segment etc.</li>
+						</ul>
+					</li>
+
+
+
+					
+
+
+
+
+					
+
+
+							
+						
+
+
+
+	
+	</body>
+</html>
+
+
