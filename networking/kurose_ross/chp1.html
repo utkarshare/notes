@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<ul>
+			<li><div class="question">
+							<p class="question"><h2>R1. What is the difference between a <b>host</b> and an <b>end system</b>. List several different types of end systems. Is the Web server an end system ?</h2></p>
+							<p class="solution"> There is <strong>no difference between a host and an end systm</strong>. The terms may be (and are) used interchangeably. Any computer sustem that is the source or destination for information transfer can be called an end system - mobile phones, IoT enabled devices such as fridges, washing machines, garage doors, home security systems, PCs, laptops, game consoles etc - are all examples of hosts. A Web server is also a host (or an end system), as <b>it is the source of (or destination of) information transfer</b></p>
+				</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R2. The word <em>protocol</em> is often used to describe diplomatic relations. How does Wikipedia describe diplomatic protocol ?</h2></p>
+							<p class="solution">"Protocol is commonly described as a set of international courtesy rules. These well-established and time-honored rules have made it easier for nations and people to live and work together. Part of protocol has always been the acknowledgment of the hierarchical standing of all present. Protocol rules are based on the principles of civility."</p>
+				</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R3. Why are standards important for protocol ?</h2></p>
+							<p class="solution">Standards eliminate ambiguity, and that's their importance to protocol</p>
+				</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R4. List 6 different access technologies. Classify each as home access, enterprise access, or wide area wireless access</h2></p>
+							<p class="solution"><ul>
+											<li>Dial up line - Home access</li>
+											<li>Digital Subscriber Line - Home access</li>
+											<li>Cable - Home access</li>
+											<li>Leased Line - Enterprise access</li>
+											<li>Hybrid Fiber Coaxial - Home access</li>
+											<li>Fiber to the Home - Enterprise access/Home access</li>
+									</ul>
+
+							</p>
+					</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R5. Is HFC transmission rate dedicated or shared among users ? Are collisions possible in a downstream HFC channel ?  Why or why not ?</h2></p>
+							<p class="solution">In HFC, there is a single coaxial cable to which all home users connect. All transmissions from the cable head-end are broadcast to every house on the cable. Thus <b>it is a shared media with a shared transmission rate</b>, and <b>collisions are possible in the downstream HFC channel</b>.</p>
+					</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R7. What is the transmission rate of Ethernet LAN</h2></p>
+							<p class="solution">The transmission rates of Ethernet LAN go from 10Mbps to 10Gbps. But the individual rate of transmission depends upon number of users in the network</p>
+					</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R8. What are some of the physical media that Ethernet can run over</h2></p>
+							<p class="solution">Ethernet can run over <b>fiber optic cable</b>, <b>twisted pair cable</b> and <b>coaxial cable</b></p>
+					</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R9. DSL, FttH and HFC are all used for residential access. For each of these, provide a range of transmission rates and comment on whether the transmission rate is shared or dedicated</h2></p>
+							<p class="solution">
+									<ul>
+											<li><strong>DSL</strong> - Transmission rates of upto 5Mbps, dedicated</li>
+											<li><strong>HFC</strong> - Transmission rates of 20-30Mbps, shared</li>
+											<li><strong>FttH</strong> - Transmission rates of upto 100Mbps, can be shared or dedicated</li>
+									</ul>
+							</p>
+					</div>
+			</li>
+
+			<li>
+					<div class="question">
+							<p class="question"><h2>R10.Describe the most popular wireless access technologies. Compare and Contrast them</h2></p>
+							<p class="solution">
+									<table class="basic-table">
+											<thead>
+													<tr>
+														<th></th>
+														<th>GEO Sattelite </th>
+														<th>LEO Sattelite </th>
+														<th>Wifi </th>
+														<th>3G cellular</th>
+														<th>4G cellular</th>
+													</tr>
+											</thead>
+											<tbody>
+													<tr>
+															<td class="fcolumn">Transmission Rate</td>
+															<td>1Mbps down:256kbps up</td>
+															<td></td>
+															<td>100Mbps</td>
+															<td>20Mbps</td>
+															<td>100Mbps</td>
+													</tr>
+											</tbody>
+									</table>
+							</p>
+					</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R11. Suppose there is exactly one packet switch between a sending host and a reciving host. The transmission rate between the sending host and the switch is \(R_{1}\). The trasmission rate between the switch and the reciving host is \(R_{2}\). The switch uses store-and-forward packet switching. If we ignore the queuing delay, processing delay and the propagation delay, then what is the end-to-end delay to send a packet of length \(L\)</h2></p>
+					<p class="solution">The time taken for the packet to go from source host to switch is \(\frac{L}{R_{1}}\). The time taken for the packet to go from switch to reciving host is \(\frac{L}{R_{2}}\). Thus the total end-to-end delay is \[\frac{L}{R_{1}} + \frac{L}{R_{2}} = \frac{L\times(R_{1} + R_{2})}{R_{1} \times R_{2}}\]</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R12. What advantage does a circuit switched network have over a packet switched network ? What advantage does TDM over FDM in a circuit switched network ?</h2></p>
+					<p class="solution">Circuit switched networks guarantee that delivery of packets is in order, as well as ensure that a minimum bandwidth will be reserved for transmission. FDM required sophisticated hardware to convert signals into appropriate frequencies</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R13. Suppose users share a 2Mbps link. Also suppose each user transmits continuously at 1Mbps when transmitting, but each user only transmits 20% of the time. 
+							<ol>
+								<li> When using circuit switching, how many users can be supported ?</li>
+								<li> If packet switching is used, why will there be no queueing delay if 2 or fewers users are transmitting. Why will there be a queueing delay if 3 or more users are transmitting at the same time</li>
+								<li> Find the probability that a given user is transmitting </li>
+								<li> Suppose there are three users. At any given time, find the probability that all three are transmitting simultaneously. Find the fraction of time during which the queue grows</li>
+							</ol>
+						</h2>
+					</p>
+					<p class="solution">
+						<ol>
+							<li>Only 2 users can be supported in circuit switching mode</li>
+							<li>If fewer than 2 users are using the system, then the arrival rate of packets will not exceed 2Mbps, and since that is the transmission rate of the link, the packets will exit as soon as they enter, with no queuing delays. If 3 users or more are transmitting, the packet arrival rate will exceed 2Mbps, and thus queues will form, leading to queuing delays</li>
+							<li>Probability that a given user is transmitting is already given, it is \(0.2\).</li>
+							<li>Probability that all three users are transmitting at a given time is \((0.2)^{3} = 0.008\). Thus the fraction of time for which the queue is growing is \(0.0008\)</li>
+						</ol>
+					</p>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R14. Why will two ISPs at the same level peer with each other ? How do IXPs earn money ?</h2></p>
+					<p class="solution">ISPs at the same level with peer with each other to save money. Since they pay higher tier ISPs according to the amount of data they transmit, by peering with other ISPs they can share data flow destined for each other, without having to go through the higher tier ISPs. Thus they reduce the amount of data and the the amount of payment to the higher tier ISPS. To facilitate these peerings, some companies make IXPs where many ISPs can peer together. Thus the ISPs pay the IXPs some amount of money, and in return they can peer with many other ISPs at once. The amount they pay to the IXPs is lower than the amount they would have had to pay to the higher tier ISPs for the volume of traffic that is now directed to the IXP</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R15. Some content providers have created their own networks. Describe Google's network. What motivates content providers to create these networks</h2></p>
+					<p class="solution">Content providers also have to pay intermediate ISPs money proportional to the traffic they generate. In creating their own networks and linking those networks directly to access ISPs and IXPs, they can reach these IXPs directly and not have to pay the intermediary ISPs money for their traffic</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R16. Consider sending a packet from some source host to a destination host over a fixed route. List the delay components in the end-to-end delay. Which of these delays are constant and which are variable</h2></p>
+					<p class="solution">The end to end delay is comprised of <b>Propagation Delay</b>, <b>Transmission Delay</b>. <b>Propagation Delay</b> and <b>Queuing Delay</b>. All delays are uniform except for Queuing Delay, which is variable</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+					<p class="question"><h2>R18. How long does it take a packet of length \(1000\) bytes to propagate over a link of distance \(2500\) km, propoagation speed of \(2.5 \times 10^{8}\frac{meters}{second}\), and transmission rate of \(2\)Mbps ? More generally, how long does it take a packet of length \(L\), to propoagate over a link of distance \(d\), propagation speed \(s\), and transmission rate \(R\) Mbps ? Does this delay depend upon packet length ? Does this delay depend upon transmission rate ?</h2></p>
+					<p class="solution">The time taken by a packet of length \(1000\) bytes to propagate over a distance of \(2500\)km, propagation speed of \(2.5 \times 10^{8}\frac{meter}{second}\), and trasmission rate of \(2\)Mbps is \[\frac{2500 \times 10^{3} m}{2.5 \times 10^{8} m s^{-1}}\] \[ = \frac{25\ s}{2.5 \times 10^{3}}\] \[ = 10 \times 10^{-3} m\ s^{-1}\] \[ = 10 ms^{-1}\]. More genrally, for a packet of length \(L\) to propoagate over a distance \(d\) with speed of \(s\) is \[ T_{pd} = \frac{d}{s}\]. There is <b>no role played by the length of the packet or the transmission rate in calculating this.</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="question">
+
+
+
+					
+
+
+				
+
+		
+	<body>
+	
+	</body>
+</html>
+
+

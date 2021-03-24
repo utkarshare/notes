@@ -1,14 +1,36 @@
 body{
 	margin:40px
-	auto;max-width:1700px;line-height:1.6;font-size:18px;color:#444;padding:0
+	auto;max-width:1550px;line-height:1.8;font-size:18px;color:#444;padding:0
 	10px
 }
+
 h1,h2,h3{line-height:1.2}
-li {margin-top:14px;}
-img {
-	margin-top:60px;
-	margin-bottom:60px;
+
+.centeralign {text-align:center;}
+
+.basic-table {
+	border-collapse:collapse;
+	margin:50px auto;
+	min-width:400px;
+	text-align:center;
 }
-.centeralign {
-       text-align:center;
-}       
+
+.basic-table thead tr{
+	background-color:#a7a7a7a7;
+	text-align:left;
+}
+
+.basic-table th,
+.basic-table td{
+	border: 2px solid;
+	padding:12px 12px 12px 12px;
+}
+
+.basic-table tbody tr {
+	border: 2px solid ;
+}
+
+.fcolumn{
+	font-weight:bold;
+
+}
